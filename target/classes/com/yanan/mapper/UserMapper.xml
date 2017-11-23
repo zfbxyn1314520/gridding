@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//En"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <mapper namespace="com.yanan.dao.UserDao">
+        	<resultMap type="user" id="userResult">
+        		<id property="userId" column="userId"/>
+        		<result property="roleId" column="roleId"/>
+				<result property="areaId" column="areaId"/>
+        		<result property="userName" column="userName"/>
+				<result property="realName" column="realName"/>
+        		<result property="headIcon" column="headIcon"/>
+        		<result property="mobileTel" column="mobileTel"/>
+        		<result property="officeTel" column="officeTel"/>
+        		<result property="editUserName" column="editUserName"/>
+        		<result property="editUserDate" column="editUserDate"/>
+        		<result property="user_enable" column="user_enable"/>
+        		<result property="user_login_ip" column="user_login_ip"/>
+        		<result property="user_last_login" column="user_last_login"/>
+        		<association property="area" javaType="area">
+        			<id property="areaId" column="areaId"/>
+        			<result property="areaName" column="areaName"/>
+        			<result property="areaCode" column="areaCode"/>
+        			<result property="areaLevel" column="areaLevel"/>
+        		</association>
+				<association property="role" javaType="role">
+					<id property="roleId" column="roleId"/>
+					<result property="roleName" column="roleName"/>
+					<result property="roleLevel" column="roleLevel"/>
+				</association>        		
+        	</resultMap>
+        	
+        	<select id="validateUser" parameterType="user" resultMap="userResult">
+        		SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable
+        		FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=#{userName} OR mobileTel=#{userName}) AND password=#{password} AND user_enable=1
+        	</select>
+        	
+        	
+        	
+        </mapper>

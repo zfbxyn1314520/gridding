@@ -1,0 +1,115 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background: #ebebeb;
+	color:#222;
+	font-family:"Î¢ÈíÑÅºÚ","ÎÄÈªæäÕýºÚ";
+	font-size:12px;
+}
+.top_div{
+	width:100%;
+	height:95px;
+	background-color: #fff;
+}
+.top_div h1{
+	font-size: 35px;
+	font-weight: lighter;
+	line-height: 95px;
+	margin:0px 0px 0px 100px;
+}
+.middle_div{
+	width:100%;
+	height:450px;
+	background-color: #008ead;
+}
+.login_div{
+	/* border: 1px solid red; */
+}
+
+.ipt{
+	border:1px solid #ccc;
+	border-radius: 4px;
+	width:280px;
+	padding:11px 30px;
+}
+#captcha{
+	width:150px;
+}
+.captcha_btn{
+	background-color: #1296db;
+	border-radius: 4px;
+	font-size:15px;
+	color:#fff;
+	padding:9px 20px;
+	margin-left:10px;
+}
+.save_userName{
+	margin-left:5px;
+	color:black;
+}
+.forget_your_pwd{
+	margin-left:75px;
+	color:black;
+}
+.submit{
+	background-color:#048f74;
+	color:#fff;
+	border-radius: 4px;
+	font-size:16px;	
+	padding:8px 133px;
+	position: absolute;
+	top:20px;
+}
+.u_logo{
+	position:absolute;
+	/* border:1px solid red; */
+	padding:17px 17px;
+	background: url("../images/login/login_ico.png");
+	background-position: -120px 8px ;
+}
+.p_logo{
+	position: absolute;
+	padding:17px 17px;
+	background: url("../images/login/login_ico.png");
+	background-position: -120px -26px;
+}
+.c_logo{
+	position: absolute;
+	background: url("../images/login/login_ico.png");
+	padding:17px 17px;
+	background-position: -157px -25px;
+}
+.tou{
+	background: url("../images/login/tou.png") no-repeat;
+	/* border:1px solid red; */
+	padding:50px 50px;
+	position: absolute;
+	left:150px;
+	top:-86px;
+}
+.initial_left_hand{
+	background: url("../images/login/hand.png") no-repeat;
+	padding:15px 15px;
+	position: absolute;
+	right:10px;
+	top:-10px;
+}
+.initial_right_hand{
+	background: url("../images/login/hand.png") no-repeat;
+	padding:15px 15px;
+	position: absolute;
+	left:105px;
+	top:-10px;
+}
+
+
+.foot_div{
+	text-align: center;
+	font-size:12px;
+	margin-top:-82px;
+}
+ a{
+	text-decoration: none;
+}
