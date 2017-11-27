@@ -292,11 +292,14 @@ function MainMenuClick(event, treeId, treeNode) {
                     </div>
                     <div id="bjui-sidenav-box">
                        <!-- 用户信息 -->
-			            <div class="tpl-sidebar-user-panel">
+			            <div class="tpl-sidebar-user-panel" style="border-bottom: 1px #eee solid;height: 90px;">
 			            <%
 			            	String headIcon = ((User)session.getAttribute("user")).getHeadIcon();
-			            	
+			            	if(headIcon==null || headIcon.equals("")){
+			            		headIcon = "images/user/default.png";
+			            	}
 			            %>
+			            <img alt="头像" src="<%=headIcon%>">
 			                <div class="tpl-user-panel-slide-toggleable">
 			                    <div class="tpl-user-panel-profile-picture">
 			                        <img src="images/user/default.png" alt="头像">
@@ -304,7 +307,7 @@ function MainMenuClick(event, treeId, treeNode) {
 			                 	<div style="margin-top:-60px;margin-left:80px;">
 			                 		 <span class="user-panel-logged-in-text">
 			              				<i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>&nbsp;
-			              				alert(${sessionScope.user.roleId });
+			              				${session.user.role.roleName }
 			          				</span>
 			                    	<a href="javascript:;" class="tpl-user-panel-action-link"> 
 			                    		<span class="am-icon-pencil"></span>&nbsp; &nbsp;账号设置
