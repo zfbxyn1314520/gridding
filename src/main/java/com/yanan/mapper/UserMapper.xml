@@ -30,10 +30,15 @@
         	</resultMap>
         	
         	<select id="validateUser" parameterType="user" resultMap="userResult">
-        		SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable
-        		FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=#{userName} OR mobileTel=#{userName}) AND password=#{password} AND user_enable=1
-        	</select>
+		    	SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable
+				FROM `user` u,`area` a WHERE u.areaId=a.areaId 
+					AND (userName=#{userName} OR mobileTel=#{userName}) AND PASSWORD=#{password} AND user_enable=1
+		  	</select>
         	
+        	<update id="updateUserLoginInfo">
+        		update user set user_login_ip=#{user_login_ip},user_last_login=#{user_last_login}
+        		where userId=#{userId};
+        	</update>
         	
         	
         </mapper>

@@ -1,5 +1,7 @@
 package com.yanan.action;
 
+import java.util.Date;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -10,7 +12,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.yanan.po.Role;
 import com.yanan.po.User;
+import com.yanan.service.RoleService;
 import com.yanan.service.UserService;
 
 @Controller
@@ -19,7 +23,8 @@ public class UserAction extends CommonAction{
 
 	@Autowired
 	private UserService userService;
-	
+	@Autowired
+	private RoleService roleService;
 	/**
 	 * 用户登录
 	 * @param request
@@ -27,20 +32,27 @@ public class UserAction extends CommonAction{
 	 * @param user
 	 * @return  statusCode：200成功，300失败
 	 */
-	@SuppressWarnings("unused")
 	@RequestMapping(value="/login")
 	@ResponseBody
 	public String userLogin(HttpServletRequest request,HttpServletResponse response,
-			User user) {
-		System.out.println("user"+user.getUserName());
-		User u = this.userService.validateUser(user);
-		System.out.println("u:"+u.getUserName());
-		if(u!=null) {
-			HttpSession session = request.getSession();
-			session.setAttribute("user", u);
+			User u) {
+		
+		User user = this.userService.validateUser(u);
+		HttpSession session = request.getSession();
+		if(user!=null) {
+			String loginIP = getIpAddr(request);
+			user.setUser_last_login(new Date());
+			user.setUser_login_ip(loginIP);
+			Integer roleId = user.getRoleId();
+			this.userService.updateUserLoginInfo(getIpAddr(request), new Date(), user.getUserId());
+			Role role = this.roleService.getRoleById(roleId);
+			if(role!=null) {
+				user.setRole(role);	
+			}
+			session.setAttribute("user", user);
 			session.setMaxInactiveInterval(1800);
-			/*MDC.put("userId", u.getUserId());
-			MDC.put("logIP", u.getUser_login_ip());*/
+			MDC.put("userId", user.getUserId());
+			MDC.put("logIP", user.getUser_login_ip());
 			this.logger.info("用户登录成功(PC端)！~");
 			return "{\"statusCode\":200,\"message\":\"用户登录成功！\"}";
 		}else {

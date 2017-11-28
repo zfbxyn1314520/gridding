@@ -55,7 +55,7 @@
 
 
 <!-- jquery -->
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 <script src="B-JUI/js/jquery.cookie.js"></script>
 <!--[if lte IE 9]>
 <script src="B-JUI/other/jquery.iframe-transport.js"></script>
@@ -281,7 +281,6 @@ function MainMenuClick(event, treeId, treeNode) {
     </header>
     
     
-    <a>aa</a>
     <div id="bjui-body-box">
         <div class="container_fluid" id="bjui-body">
             <div id="bjui-sidenav-col">
@@ -293,27 +292,28 @@ function MainMenuClick(event, treeId, treeNode) {
                     <div id="bjui-sidenav-box">
                        <!-- 用户信息 -->
 			            <div class="tpl-sidebar-user-panel" style="border-bottom: 1px #eee solid;height: 90px;">
-			            <%
-			            	String headIcon = ((User)session.getAttribute("user")).getHeadIcon();
-			            	if(headIcon==null || headIcon.equals("")){
-			            		headIcon = "images/user/default.png";
-			            	}
-			            %>
-			            <img alt="头像" src="<%=headIcon%>">
 			                <div class="tpl-user-panel-slide-toggleable">
 			                    <div class="tpl-user-panel-profile-picture">
-			                        <img src="images/user/default.png" alt="头像">
+			                        <%
+						            	String headIcon = ((User)session.getAttribute("user")).getHeadIcon();
+						            	if(headIcon==null || headIcon.equals("")){
+						            		headIcon = "images/user/default.png";
+						            	}
+						            %>
+						            <img alt="头像" src="<%=headIcon%>">
 			                    </div>
 			                 	<div style="margin-top:-60px;margin-left:80px;">
 			                 		 <span class="user-panel-logged-in-text">
 			              				<i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>&nbsp;
-			              				${session.user.role.roleName }
-			          				</span>
+			              				${sessionScope.user.role.roleName}</span>
 			                    	<a href="javascript:;" class="tpl-user-panel-action-link"> 
 			                    		<span class="am-icon-pencil"></span>&nbsp; &nbsp;账号设置
 			                   		</a>
 			                 	</div>
 			                </div>
+			            </div>
+			            <div>
+			            	<span id="navTab">此处放导航垂直菜单</span>
 			            </div>
                     </div>
                 </div>
@@ -338,22 +338,38 @@ function MainMenuClick(event, treeId, treeNode) {
                 <div class="navtab-panel tabsPageContent">
                     <div class="navtabPage unitBox">
                         <div class="bjui-pageContent">
-                            <div class="highlight">
-                                <pre class="prettyprint">
-------------------------
-BJUI 更新至 V1.31
-------------------------
-[修复] datagrid参数templateWidth、dialogFilterW为0时默认为启用；修复排序bug；新增字段参数itemattr，为items参数指定key/value；新增方法filter，用于数据筛选。
-[修复] 分页组件。
-[更新] ajaxform、ajaxsearch新增参数validate，是否验证标记。
-[更新] 验证插件nice validate更新至1.0.7。
-[更新] 图标字体Font Awesome更新至4.7.0。
-[调整] CSS细微调整。
-------------------------
-
-　　　　　　2016-11-01 by.萧克南
-                                </pre>
-                            </div>
+                           <div class="row">
+							  <div class="col-md-6" style="">
+									<div class="panel panel-default">
+									  <div class="panel-heading">
+									    <h3 class="panel-title">饼图</h3>
+									  </div>
+									  <div class="panel-body">
+									    	<div id="pie_echart" style="mini-width:400px;height:350px;"></div>
+									  </div>
+									</div>
+							  </div>
+							  <div class="col-md-6">
+							  		<div class="panel panel-default">
+									  <div class="panel-heading">
+									    <h3 class="panel-title">地图</h3>
+									  </div>
+									  <div class="panel-body">
+									    <div id="map_echart" style="mini-width:400px;height:350px;"></div>
+									  </div>
+									</div>
+							  </div>
+							  <div class="col-md-12">
+							  		<div class="panel panel-default">
+									  <div class="panel-heading">
+									    <h3 class="panel-title">柱状图</h3>
+									  </div>
+									  <div class="panel-body">
+									    <div id="bar_echart" style="mini-width:400px;height:350px;"></div>
+									  </div>
+									</div>
+							  </div>
+							</div>
                         </div>
                     </div>
                 </div>

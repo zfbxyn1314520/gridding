@@ -709,3 +709,701 @@ FrameworkServlet 'springMVC': initialization completed in 7631 ms
 <==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
 <==      Total: 7
 用户登录成功(PC端)！~
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Nov 24 19:43:12 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Nov 24 19:43:12 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Nov 24 19:43:12 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 7308 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+用户登录成功(PC端)！~
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Nov 24 19:43:12 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Nov 24 22:00:06 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Nov 24 22:00:06 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Nov 24 22:00:06 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 6911 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+用户登录成功(PC端)！~
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 09:54:34 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 09:54:34 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 09:54:34 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 7522 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123456(String)
+<==      Total: 0
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123456(String)
+<==      Total: 0
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 09:54:34 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 10:46:58 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 10:46:58 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 10:46:58 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 7167 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123456(String)
+<==      Total: 0
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123456(String)
+<==      Total: 0
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+用户登录成功(PC端)！~
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 10:46:58 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:26:29 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:26:29 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:26:29 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 7376 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:26:29 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:42:38 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:42:38 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:42:38 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 8743 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:50:18 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:50:18 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:50:18 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 7268 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a,role r WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND password=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 7
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:58:55 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:58:55 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:58:55 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 7133 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=? , user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 16:19:15.276(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=? , user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 16:20:34.704(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=? , user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 16:24:45.957(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=? , user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 16:25:53.169(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=? , user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 16:26:29.688(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=? , user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 16:27:01.494(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=? , user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 16:30:21.588(Timestamp), 1(Integer)
+<==    Updates: 1
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 15:58:55 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 16:30:58 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 16:30:58 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 16:30:58 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 7214 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM user u,area a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=? , user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 16:32:07.775(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 17:21:23.085(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 17:21:27.169(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 17:21:52.324(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 17:29:24.289(Timestamp), 1(Integer)
+<==    Updates: 1
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 16:30:58 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 17:34:20 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 17:34:20 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 17:34:20 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 6948 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 17:35:26.747(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 17:36:09.229(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT roleId,roleName,roleMemo,editRoleName,editRoleDate,role_enable,roleLevel,userCount FROM role WHERE roleId=?; 
+==> Parameters: 6(Integer)
+<==    Columns: roleId, roleName, roleMemo, editRoleName, editRoleDate, role_enable, roleLevel, userCount
+<==        Row: 6, 系统管理员, 系统最高权限,管理系统所有的功能, admin, 2017-01-21 18:06:53.0, 1, 0, null
+<==      Total: 1
+用户登录成功(PC端)！~
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 20:32:18 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 20:32:18 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 20:32:18 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 12482 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 20:34:26.501(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT roleId,roleName,roleMemo,editRoleName,editRoleDate,role_enable,roleLevel,userCount FROM role WHERE roleId=?; 
+==> Parameters: 6(Integer)
+<==    Columns: roleId, roleName, roleMemo, editRoleName, editRoleDate, role_enable, roleLevel, userCount
+<==        Row: 6, 系统管理员, 系统最高权限,管理系统所有的功能, admin, 2017-01-21 18:06:53.0, 1, 0, null
+<==      Total: 1
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 20:37:01.269(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT roleId,roleName,roleMemo,editRoleName,editRoleDate,role_enable,roleLevel,userCount FROM role WHERE roleId=?; 
+==> Parameters: 6(Integer)
+<==    Columns: roleId, roleName, roleMemo, editRoleName, editRoleDate, role_enable, roleLevel, userCount
+<==        Row: 6, 系统管理员, 系统最高权限,管理系统所有的功能, admin, 2017-01-21 18:06:53.0, 1, 0, null
+<==      Total: 1
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 20:43:00.121(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT roleId,roleName,roleMemo,editRoleName,editRoleDate,role_enable,roleLevel,userCount FROM role WHERE roleId=?; 
+==> Parameters: 6(Integer)
+<==    Columns: roleId, roleName, roleMemo, editRoleName, editRoleDate, role_enable, roleLevel, userCount
+<==        Row: 6, 系统管理员, 系统最高权限,管理系统所有的功能, admin, 2017-01-21 18:06:53.0, 1, 0, null
+<==      Total: 1
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 20:44:16.141(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT roleId,roleName,roleMemo,editRoleName,editRoleDate,role_enable,roleLevel,userCount FROM role WHERE roleId=?; 
+==> Parameters: 6(Integer)
+<==    Columns: roleId, roleName, roleMemo, editRoleName, editRoleDate, role_enable, roleLevel, userCount
+<==        Row: 6, 系统管理员, 系统最高权限,管理系统所有的功能, admin, 2017-01-21 18:06:53.0, 1, 0, null
+<==      Total: 1
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 20:46:06.946(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT roleId,roleName,roleMemo,editRoleName,editRoleDate,role_enable,roleLevel,userCount FROM role WHERE roleId=?; 
+==> Parameters: 6(Integer)
+<==    Columns: roleId, roleName, roleMemo, editRoleName, editRoleDate, role_enable, roleLevel, userCount
+<==        Row: 6, 系统管理员, 系统最高权限,管理系统所有的功能, admin, 2017-01-21 18:06:53.0, 1, 0, null
+<==      Total: 1
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-27 20:46:45.374(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT roleId,roleName,roleMemo,editRoleName,editRoleDate,role_enable,roleLevel,userCount FROM role WHERE roleId=?; 
+==> Parameters: 6(Integer)
+<==    Columns: roleId, roleName, roleMemo, editRoleName, editRoleDate, role_enable, roleLevel, userCount
+<==        Row: 6, 系统管理员, 系统最高权限,管理系统所有的功能, admin, 2017-01-21 18:06:53.0, 1, 0, null
+<==      Total: 1
+用户登录成功(PC端)！~
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 20:32:18 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 21:51:49 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 21:51:49 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 21:51:49 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 12255 ms
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 21:51:49 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 21:56:31 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 21:56:31 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 21:56:31 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 7017 ms
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 21:56:31 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 22:05:08 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 22:05:08 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 22:05:08 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 8127 ms
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 22:05:08 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 22:16:51 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 22:16:51 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Nov 27 22:16:51 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 7716 ms
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 08:47:34 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 08:47:34 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 08:47:34 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 7121 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-28 09:15:44.295(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT roleId,roleName,roleMemo,editRoleName,editRoleDate,role_enable,roleLevel,userCount FROM role WHERE roleId=?; 
+==> Parameters: 6(Integer)
+<==    Columns: roleId, roleName, roleMemo, editRoleName, editRoleDate, role_enable, roleLevel, userCount
+<==        Row: 6, 系统管理员, 系统最高权限,管理系统所有的功能, admin, 2017-01-21 18:06:53.0, 1, 0, null
+<==      Total: 1
+用户登录成功(PC端)！~

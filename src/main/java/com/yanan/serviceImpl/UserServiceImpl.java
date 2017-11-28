@@ -1,5 +1,7 @@
 package com.yanan.serviceImpl;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,9 +14,14 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserDao userDao;
 	
-	public User validateUser(User user) {
+	public User validateUser(User u) {
 		// TODO Auto-generated method stub
-		return this.userDao.validateUser(user);
+		return this.userDao.validateUser(u);
+	}
+
+	public void updateUserLoginInfo(String user_login_ip, Date user_last_login, Integer userId) {
+		// TODO Auto-generated method stub
+		this.userDao.updateUserLoginInfo(user_login_ip, user_last_login, userId);
 	}
 
 }
