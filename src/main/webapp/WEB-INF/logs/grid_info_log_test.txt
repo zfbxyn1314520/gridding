@@ -1407,3 +1407,212 @@ FrameworkServlet 'springMVC': initialization completed in 7121 ms
 <==        Row: 6, 系统管理员, 系统最高权限,管理系统所有的功能, admin, 2017-01-21 18:06:53.0, 1, 0, null
 <==      Total: 1
 用户登录成功(PC端)！~
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 08:47:34 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 10:18:13 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 10:18:13 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 10:18:13 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 8727 ms
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 10:18:13 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 10:22:42 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 10:22:42 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 10:22:42 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 8494 ms
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 10:22:42 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 14:55:20 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 14:55:20 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 14:55:20 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 8763 ms
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 14:55:20 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 14:57:47 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 14:57:47 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 14:57:47 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 7965 ms
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-28 16:09:09.121(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT roleId,roleName,roleMemo,editRoleName,editRoleDate,role_enable,roleLevel,userCount FROM role WHERE roleId=?; 
+==> Parameters: 6(Integer)
+<==    Columns: roleId, roleName, roleMemo, editRoleName, editRoleDate, role_enable, roleLevel, userCount
+<==        Row: 6, 系统管理员, 系统最高权限,管理系统所有的功能, admin, 2017-01-21 18:06:53.0, 1, 0, null
+<==      Total: 1
+用户登录成功(PC端)！~
+==>  Preparing: SELECT u.userId,a.areaId,a.areaName,a.areaLevel,a.areaCode,u.roleId,u.userName,u.realName,u.headIcon,u.mobileTel,u.officeTel,u.editUserName,u.editUserDate,u.user_enable FROM `user` u,`area` a WHERE u.areaId=a.areaId AND (userName=? OR mobileTel=?) AND PASSWORD=? AND user_enable=1 
+==> Parameters: admin(String), admin(String), 123(String)
+<==    Columns: userId, areaId, areaName, areaLevel, areaCode, roleId, userName, realName, headIcon, mobileTel, officeTel, editUserName, editUserDate, user_enable
+<==        Row: 1, 1, 中国, 0, 100000000000, 6, admin, 指讯科技, images/user/default.png, 15178829980, null, admin, 2017-09-28 10:57:34.0, 1
+<==      Total: 1
+==>  Preparing: update user set user_login_ip=?,user_last_login=? where userId=?; 
+==> Parameters: 0:0:0:0:0:0:0:1(String), 2017-11-28 17:20:28.022(Timestamp), 1(Integer)
+<==    Updates: 1
+==>  Preparing: SELECT roleId,roleName,roleMemo,editRoleName,editRoleDate,role_enable,roleLevel,userCount FROM role WHERE roleId=?; 
+==> Parameters: 6(Integer)
+<==    Columns: roleId, roleName, roleMemo, editRoleName, editRoleDate, role_enable, roleLevel, userCount
+<==        Row: 6, 系统管理员, 系统最高权限,管理系统所有的功能, admin, 2017-01-21 18:06:53.0, 1, 0, null
+<==      Total: 1
+用户登录成功(PC端)！~
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 19:00:27 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Mapped "{[/user/getUserPerMenu]}" onto public java.lang.String com.yanan.action.UserAction.getUserPerMenu(javax.servlet.http.HttpServletRequest)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 19:00:27 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 19:00:27 CST 2017]; root of context hierarchy
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userAction': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDao' defined in file [E:\eclipse-workspace\test_grid_1\target\classes\com\yanan\dao\UserDao.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\eclipse-workspace\test_grid_1\target\classes\com\yanan\mapper\MenuMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'permissions'.  Cause: java.lang.ClassNotFoundException: Cannot find class: permissions
+Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userAction': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDao' defined in file [E:\eclipse-workspace\test_grid_1\target\classes\com\yanan\dao\UserDao.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\eclipse-workspace\test_grid_1\target\classes\com\yanan\mapper\MenuMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'permissions'.  Cause: java.lang.ClassNotFoundException: Cannot find class: permissions
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:543)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:171)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1183)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1099)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:989)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4931)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5241)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1419)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1409)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDao' defined in file [E:\eclipse-workspace\test_grid_1\target\classes\com\yanan\dao\UserDao.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\eclipse-workspace\test_grid_1\target\classes\com\yanan\mapper\MenuMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'permissions'.  Cause: java.lang.ClassNotFoundException: Cannot find class: permissions
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDao' defined in file [E:\eclipse-workspace\test_grid_1\target\classes\com\yanan\dao\UserDao.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\eclipse-workspace\test_grid_1\target\classes\com\yanan\mapper\MenuMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'permissions'.  Cause: java.lang.ClassNotFoundException: Cannot find class: permissions
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1531)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 45 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\eclipse-workspace\test_grid_1\target\classes\com\yanan\mapper\MenuMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'permissions'.  Cause: java.lang.ClassNotFoundException: Cannot find class: permissions
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 58 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\eclipse-workspace\test_grid_1\target\classes\com\yanan\mapper\MenuMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'permissions'.  Cause: java.lang.ClassNotFoundException: Cannot find class: permissions
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:522)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 65 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'permissions'.  Cause: java.lang.ClassNotFoundException: Cannot find class: permissions
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:520)
+	... 68 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'permissions'.  Cause: java.lang.ClassNotFoundException: Cannot find class: permissions
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:265)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.processNestedResultMappings(XMLMapperBuilder.java:386)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildResultMappingFromContext(XMLMapperBuilder.java:366)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:280)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:252)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:244)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:116)
+	... 70 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'permissions'.  Cause: java.lang.ClassNotFoundException: Cannot find class: permissions
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 77 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: permissions
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 79 more
+FrameworkServlet 'springMVC': initialization started
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 19:04:41 CST 2017]; root of context hierarchy
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-config.xml]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Overriding bean definition for bean 'mvcUriComponentsContributor' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+Loading XML bean definitions from file [E:\eclipse-workspace\test_grid_1\target\classes\conf\spring-mybatis.xml]
+Mapped "{[/user/login]}" onto public java.lang.String com.yanan.action.UserAction.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yanan.po.User)
+Mapped "{[/user/getUserPerMenu]}" onto public java.lang.String com.yanan.action.UserAction.getUserPerMenu(javax.servlet.http.HttpServletRequest)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 19:04:41 CST 2017]; root of context hierarchy
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Nov 28 19:04:41 CST 2017]; root of context hierarchy
+FrameworkServlet 'springMVC': initialization completed in 6590 ms

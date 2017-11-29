@@ -1,6 +1,7 @@
 package com.yanan.action;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,8 +13,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.yanan.po.Menu;
 import com.yanan.po.Role;
+import com.yanan.po.Role_per;
 import com.yanan.po.User;
+import com.yanan.service.MenuService;
 import com.yanan.service.RoleService;
 import com.yanan.service.UserService;
 
@@ -25,6 +29,10 @@ public class UserAction extends CommonAction{
 	private UserService userService;
 	@Autowired
 	private RoleService roleService;
+	@Autowired
+	private MenuService menuService;
+	
+	
 	/**
 	 * 用户登录
 	 * @param request
@@ -59,5 +67,25 @@ public class UserAction extends CommonAction{
 			return "{\"statusCode\":300,\"message\":\"用户名或者密码错误！登陆失败！\"}";
 		}
 	}
+	
+	@RequestMapping("/getUserPerMenu")
+	@ResponseBody
+	public String getUserPerMenu(HttpServletRequest request) {
+		
+		HttpSession session = request.getSession();
+		User user = (User) session.getAttribute("user");
+		if(user!=null) {
+			List<Menu> menus = this.menuService.getAllMenu();
+			
+			
+			
+			
+		}
+		
+		return null;
+	}
+	
+	
+	
 	
 }

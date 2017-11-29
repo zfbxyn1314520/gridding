@@ -40,5 +40,10 @@
         		where userId=#{userId};
         	</update>
         	
+        	<select id="getUserPerMenu" resultType="role_per">
+        		select  from role_per roleId,menuId,perId
+        		where roleId=#{user.roleId} and menuId=#{menuId};
+        	</select>
+        	
         	
         </mapper>

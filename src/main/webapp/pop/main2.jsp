@@ -53,7 +53,6 @@
 <script src="B-JUI/assets/js/jquery.min.js"></script>
 <script src="B-JUI/assets/js/amazeui.min.js"></script>
 
-
 <!-- jquery -->
 <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 <script src="B-JUI/js/jquery.cookie.js"></script>
@@ -92,12 +91,18 @@
     <!-- ECharts -->
     <script type="text/javascript" defer src="B-JUI/plugins/echarts/echarts.js"></script>
     <script type="text/javascript" defer src="B-JUI/plugins/echarts/chart/map.js"></script>
+    <script type="text/javascript" defer src="B-JUI/plugins/echarts/chart/pie.js"></script>
+    <script type="text/javascript" defer src="B-JUI/plugins/echarts/chart/bar.js"></script>
 <!-- other plugins -->
 <script src="B-JUI/plugins/other/jquery.autosize.js"></script>
 <script src="B-JUI/plugins/download/jquery.fileDownload.js"></script>
     <!-- 提示插件 -->
     <script type="text/javascript" src="B-JUI/assets/js/loading.js"></script>
 
+<!-- echarts的饼图，地图，柱状图js引入 -->
+<script type="text/javascript" src="js/echarts_pie_bar.js"></script>
+<!-- 引入main.js -->
+<script type="text/javascript" src="js/main.js"></script>
 
 <style type="text/css">
 	.tpl-header-navbar ul li{
