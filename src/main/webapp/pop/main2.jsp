@@ -132,7 +132,7 @@ $(function() {
     })
     //时钟
     var today = new Date(), time = today.getTime()
-    $('#bjui-date').html(today.formatDate('yyyy/MM/dd'))
+    $('#bjui-date').html(today.formatDate('yyyy年MM月dd日'))
     setInterval(function() {
         today = new Date(today.setSeconds(today.getSeconds() + 1))
         $('#bjui-clock').html(today.formatDate('HH:mm:ss'))
@@ -295,31 +295,32 @@ function MainMenuClick(event, treeId, treeNode) {
                         <i class="fa fa-long-arrow-left"></i>
                     </div>
                     <div id="bjui-sidenav-box">
-                       <!-- 用户信息 -->
-			            <div class="tpl-sidebar-user-panel" style="border-bottom: 1px #eee solid;height: 90px;">
-			                <div class="tpl-user-panel-slide-toggleable">
-			                    <div class="tpl-user-panel-profile-picture">
-			                        <%
-						            	String headIcon = ((User)session.getAttribute("user")).getHeadIcon();
-						            	if(headIcon==null || headIcon.equals("")){
-						            		headIcon = "images/user/default.png";
-						            	}
-						            %>
-						            <img alt="头像" src="<%=headIcon%>">
-			                    </div>
-			                 	<div style="margin-top:-60px;margin-left:80px;">
-			                 		 <span class="user-panel-logged-in-text">
-			              				<i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>&nbsp;
-			              				${sessionScope.user.role.roleName}</span>
-			                    	<a href="javascript:;" class="tpl-user-panel-action-link"> 
-			                    		<span class="am-icon-pencil"></span>&nbsp; &nbsp;账号设置
-			                   		</a>
-			                 	</div>
-			                </div>
-			            </div>
-			            <div>
-			            	<span id="navTab">此处放导航垂直菜单</span>
-			            </div>
+                    <!-- 侧边导航栏 -->
+                    	<div class="left-sidebar">
+	                    		<!-- 用户信息 -->
+				            <div class="tpl-sidebar-user-panel" style="border-bottom: 1px #eee solid;height: 90px;">
+				                <div class="tpl-user-panel-slide-toggleable">
+				                    <div class="tpl-user-panel-profile-picture">
+				                        <%
+							            	String headIcon = ((User)session.getAttribute("user")).getHeadIcon();
+							            	if(headIcon==null || headIcon.equals("")){
+							            		headIcon = "images/user/default.png";
+							            	}
+							            %>
+							            <img alt="头像" src="<%=headIcon%>">
+				                    </div>
+				                 	<div style="margin-top:-60px;margin-left:80px;">
+				                 		 <span class="user-panel-logged-in-text">
+				              				<i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>&nbsp;
+				              				${sessionScope.user.role.roleName}</span>
+				                    	<a href="javascript:;" class="tpl-user-panel-action-link"> 
+				                    		<span class="am-icon-pencil"></span>&nbsp; &nbsp;账号设置
+				                   		</a>
+				                 	</div>
+				                </div>
+				            </div>
+				            <div id="navTab"></div>
+	                    </div>
                     </div>
                 </div>
             </div>

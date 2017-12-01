@@ -1,11 +1,13 @@
 package com.yanan.serviceImpl;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.yanan.dao.UserDao;
+import com.yanan.po.Role_per;
 import com.yanan.po.User;
 import com.yanan.service.UserService;
 @Service
@@ -22,6 +24,11 @@ public class UserServiceImpl implements UserService {
 	public void updateUserLoginInfo(String user_login_ip, Date user_last_login, Integer userId) {
 		// TODO Auto-generated method stub
 		this.userDao.updateUserLoginInfo(user_login_ip, user_last_login, userId);
+	}
+
+	public List<Role_per> getUserPerMenu(User user, Integer menuId) {
+		// TODO Auto-generated method stub
+		return this.userDao.getUserPerMenu(user, menuId);
 	}
 
 }

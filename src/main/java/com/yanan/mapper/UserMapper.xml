@@ -41,7 +41,7 @@
         	</update>
         	
         	<select id="getUserPerMenu" resultType="role_per">
-        		select  from role_per roleId,menuId,perId
+        		select roleId,menuId,perId from role_per 
         		where roleId=#{user.roleId} and menuId=#{menuId};
         	</select>
         	

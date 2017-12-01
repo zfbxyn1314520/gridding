@@ -1,6 +1,7 @@
 package com.yanan.action;
 
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -68,21 +69,57 @@ public class UserAction extends CommonAction{
 		}
 	}
 	
+	/**
+	 * 获取当前用户下的菜单选项
+	 * @param request
+	 * @return
+	 */
 	@RequestMapping("/getUserPerMenu")
 	@ResponseBody
-	public String getUserPerMenu(HttpServletRequest request) {
+	public List<Menu> getUserPerMenu(HttpServletRequest request) {
 		
 		HttpSession session = request.getSession();
 		User user = (User) session.getAttribute("user");
 		if(user!=null) {
 			List<Menu> menus = this.menuService.getAllMenu();
+			Integer menuId = 0;
+			Iterator<Menu> lists = menus.iterator();
+			while(lists.hasNext()) {
+				Menu menu = lists.next();
+				if(menu.getParentMenuId()!=null) {
+					menuId = menu.getMenuId();
+					List<Role_per> rolePer = this.userService.getUserPerMenu(user, menuId);
+					if(rolePer.size()==0) {
+						lists.remove();
+					}
+					menuId = 0;
+				}
+			}
 			
-			
-			
-			
+			Iterator<Menu> list = menus.iterator();
+			while(list.hasNext()) {
+				Menu menu = list.next();
+				if(menu.getParentMenuId()==null) {
+					Integer row = 0;
+					if(menu.getMenuName().equals("我的主页")) {
+						continue;
+					}
+					for(int i=0;i<menus.size();i++) {
+						if(menus.get(i).getParentMenuId()==menu.getMenuId()) {
+							row++;
+						}
+					}
+					if(row==0) {
+						list.remove();
+					}else {
+						row = 0;
+					}
+				}
+			}			
+			return menus;
+		}else {
+			return null;
 		}
-		
-		return null;
 	}
 	
 	

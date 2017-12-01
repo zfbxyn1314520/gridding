@@ -12,7 +12,7 @@ public class Menu {
 	private Integer parentMenuId;
 	private String menuName;
 	private String menuUri;
-	private String menuIco;
+	private String menuIcon;
 	private List<Permission> permissions;
 	
 	public Menu() {
@@ -20,21 +20,21 @@ public class Menu {
 		this.permissions = new ArrayList<Permission>();
 	}
 
-	public Menu(Integer menuId, Integer parentMenuId, String menuName, String menuUri, String menuIco,
+	public Menu(Integer menuId, Integer parentMenuId, String menuName, String menuUri, String menuIcon,
 			List<Permission> permissions) {
 		super();
 		this.menuId = menuId;
 		this.parentMenuId = parentMenuId;
 		this.menuName = menuName;
 		this.menuUri = menuUri;
-		this.menuIco = menuIco;
+		this.menuIcon = menuIcon;
 		this.permissions = permissions;
 	}
 
 	@Override
 	public String toString() {
 		return "Menu [menuId=" + menuId + ", parentMenuId=" + parentMenuId + ", menuName=" + menuName + ", menuUri="
-				+ menuUri + ", menuIco=" + menuIco + ", permissions=" + permissions + "]";
+				+ menuUri + ", menuIcon=" + menuIcon + ", permissions=" + permissions + "]";
 	}
 
 	public Integer getMenuId() {
@@ -69,12 +69,12 @@ public class Menu {
 		this.menuUri = menuUri;
 	}
 
-	public String getMenuIco() {
-		return menuIco;
+	public String getmenuIcon() {
+		return menuIcon;
 	}
 
-	public void setMenuIco(String menuIco) {
-		this.menuIco = menuIco;
+	public void setmenuIcon(String menuIcon) {
+		this.menuIcon = menuIcon;
 	}
 
 	public List<Permission> getPermissions() {
